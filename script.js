@@ -3,7 +3,7 @@ const quizData = [
     { q: "Vai trò chủ yếu của các nguyên tố vi lượng là gì?", options: ["Cấu tạo các đại phân tử hữu cơ", "Cấu tạo khung xương tế bào", "Thành phần của enzyme, hormone, vitamin", "Nguồn dự trữ năng lượng chính"], correct: 2, hint: "Chúng tham gia vào hoạt hóa enzyme và điều tiết chuyển hóa." },
     { q: "Đặc điểm nào giúp nước có tính phân cực?", options: ["Có 2 nguyên tử O và 1 H", "Đầu O tích điện âm, đầu H tích điện dương một phần", "Tồn tại 3 trạng thái", "Liên kết hydrogen bền vững"], correct: 1, hint: "Do độ âm điện của Oxygen lớn hơn Hydrogen." },
     { q: "Để nhận biết đường khử (như glucose), người ta dùng thuốc thử nào?", options: ["Dung dịch Iodine", "Dung dịch Biuret", "Dung dịch Benedict", "Dung dịch Ethanol"], correct: 2, hint: "Benedict tạo kết tủa đỏ gạch khi đun nóng với đường khử." },
-    { q: "Trong phản ứng Biuret nhận biết protein, hiện tượng xảy ra là xuất hiện màu gì?", options: ["Đỏ gạch", "Xanh lam", "Tím", "Vàng"], correct: 2, hint: "Phức chất giữa Cu2+ và các liên kết peptide có màu tím đặc trưng." },
+    { q: "Trong thí nghiệm nhận biết lipid bằng phép thử nhũ tương, nếu sử dụng dầu ăn để thử thì huyền phù tạo ra sẽ có màu:", options: ["Đỏ gạch", "Xanh lam", "Trắng sữa", "Vàng"], correct: 2, hint: "nếu sử dụng dầu ăn để thử thì huyền phù tạo ra sẽ có màu trắng sữa." },
     { q: "Đại phân tử hữu cơ nào chiếm tỉ lệ khối lượng khô lớn nhất trong tế bào?", options: ["Carbohydrate", "Lipid", "Protein", "Nucleic acid"], correct: 2, hint: "Protein là thành phần cấu tạo chính của tế bào." },
     { q: "Đơn phân của protein là gì?", options: ["Glucose", "Amino acid", "Nucleotide", "Fatty acid"], correct: 1, hint: "Có khoảng 20 loại amino acid cấu tạo nên protein." },
     { q: "Loại đường nào còn được gọi là đường nho?", options: ["Glucose", "Fructose", "Galactose", "Sucrose"], correct: 0, hint: "Glucose có nhiều trong quả nho chín." },
@@ -76,5 +76,6 @@ function restartGame() {
     document.getElementById('result-screen').style.display = 'none';
     init();
 }
+
 
 window.onload = init;
