@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ôn Tập KHTN 10 - THPT LẬP NGHIỆP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <div class="school-header">
+            <h1>THPT LẬP NGHIỆP</h1>
+            <h2 id="grade-title">Ôn Tập Khoa Học Tự Nhiên 10</h2>
+        </div>
+
+        <div id="quiz-section">
+            <div class="monkey-box">🐒</div>
+            <div class="speech-bubble" id="monkey-message">
+                Chào các bạn học sinh Lập Nghiệp! Cùng Khỉ con chinh phục 40 câu hỏi KHTN nhé!
+            </div>
+            
+            <div id="question-container">
+                <span class="question-text" id="question">Đang chuẩn bị câu hỏi...</span>
+                <div id="options" class="options-grid"></div>
+            </div>
+
+            <div class="stats">
+                <div>Câu: <span id="current-pos">1</span>/40</div>
+                <div>Đúng: <span class="correct" id="score-correct">0</span></div>
+                <div>Sai: <span class="wrong" id="score-wrong">0</span></div>
+            </div>
+        </div>
+
+        <div id="result-screen" style="display: none;">
+            <div class="monkey-box">🏆</div>
+            <h2>KẾT QUẢ BÀI THI</h2>
+            <div class="speech-bubble">
+                <p id="final-stats"></p>
+                <p id="final-message"></p>
+            </div>
+            <button class="restart-btn" onclick="restartGame()">Làm lại bài</button>
+        </div>
+    </div>
+
+    <audio id="snd-correct" src="https://www.myinstants.com/media/sounds/hl1_health.mp3"></audio>
+    <audio id="snd-wrong" src="https://www.myinstants.com/media/sounds/hev_logon_1.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+:root {
+    --primary-color: #f1c40f; /* Vàng đậm */
+    --bg-color: #fef9e7;      /* Vàng nhạt */
+    --success-color: #27ae60;
+    --error-color: #e67e22;
+    --text-color: #444;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+#game-container {
+    background: white;
+    padding: 2rem;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    width: 95%;
+    max-width: 800px;
+    text-align: center;
+    border: 6px solid #f9e79f;
+}
+
+.school-header h1 { color: #d4ac0d; margin: 0; font-size: 1.8rem; }
+.school-header h2 { color: #9a7d0a; font-size: 1.1rem; margin-bottom: 20px; }
+
+/* Hiệu ứng Khỉ nhảy */
+.monkey-box { 
+    font-size: 60px; 
+    margin: 10px 0; 
+    display: inline-block;
+    animation: monkeyJump 1s infinite alternate ease-in-out; 
+}
+
+@keyframes monkeyJump {
+    0% { transform: translateY(0) rotate(0deg); }
+    100% { transform: translateY(-25px) rotate(10deg); }
+}
+
+.speech-bubble {
+    background: #fcf3cf;
+    padding: 15px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary-color);
+    font-weight: 500;
+}
+
+.question-text { font-size: 1.25rem; font-weight: bold; margin-bottom: 20px; display: block; }
+
+.options-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+button.option-btn {
+    padding: 15px;
+    border: 2px solid #f7dc6f;
+    border-radius: 15px;
+    background: white;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: 0.2s;
+}
+
+button.option-btn:hover { background: #fef9e7; border-color: var(--primary-color); }
+
+.stats { 
+    margin-top: 25px; 
+    display: flex; 
+    justify-content: space-around; 
+    background: #fef5e7; 
+    padding: 10px; 
+    border-radius: 15px;
+}
+
+.correct { color: var(--success-color); font-weight: bold; }
+.wrong { color: var(--error-color); font-weight: bold; }
+
+.restart-btn {
+    background: var(--primary-color);
+    border: none;
+    padding: 15px 30px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+@media (max-width: 600px) { .options-grid { grid-template-columns: 1fr; } }
